@@ -21,4 +21,4 @@ RUN chown -R celeryuser:celerygroup /app
 USER celeryuser
 
 # Start Celery worker
-CMD ["celery", "-A", "celery_worker.celery_app", "worker", "--loglevel=info"]
+CMD ["celery", "-A", "celery_worker.celery_app", "worker", "--loglevel=debug"]
